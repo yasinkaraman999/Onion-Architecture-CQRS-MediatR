@@ -54,7 +54,7 @@ The solution follows the Onion Architecture pattern with the following layers:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ProductApp_OnionArchitecture.git
+git clone https://github.com/yasinkaraman999/Onion-Architecture-CQRS-MediatR.git
 ```
 
 2. Navigate to the project directory
