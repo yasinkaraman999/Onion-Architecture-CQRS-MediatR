@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dto\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Mapping\" />
+    <None Remove="Wrappers\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\Repository\" />
+    <None Remove="Parameters\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Features\Queries\GetAllProduct\" />
+    <None Remove="Features\Queries\GetProductById\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dto\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Wrappers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Repository\" />
+    <Folder Include="Parameters\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Features\Queries\GetAllProduct\" />
+    <Folder Include="Features\Queries\GetProductById\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductApp.Domain\ProductApp.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+</Project>
